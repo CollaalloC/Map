@@ -2,7 +2,7 @@
  * @Author: CollaalloC
  * @Date: 2022-01-22 16:57:00
  * @LastEditors: CollaalloC
- * @LastEditTime: 2022-01-22 17:12:31
+ * @LastEditTime: 2022-01-22 20:58:06
  * @Description: file content
  * @Algorithm: algorithm
 -->
@@ -15,7 +15,7 @@ Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN�
 
 #### 软件架构
 软件架构说明
-
+暂时将参数暴露在代码中，后期可以使用json储存参数
 
 #### 安装教程
 
