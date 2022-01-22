@@ -2,7 +2,7 @@
 Author: CollaalloC
 Date: 2022-01-21 21:54:45
 LastEditors: CollaalloC
-LastEditTime: 2022-01-22 16:58:27
+LastEditTime: 2022-01-22 17:48:35
 Description: file content
 Algorithm: algorithm
 apiducuments: https://lbs.amap.com/api/webservice/guide/api/georegeo
@@ -13,7 +13,7 @@ import json
 #api 必要参数
 geo_URL = "	https://restapi.amap.com/v3/geocode/geo?parameters"
 regeo_URL = "https://restapi.amap.com/v3/geocode/regeo?parameters"
-
+key = ""
 
 #geoapi
 city = "Beijing"
@@ -45,8 +45,17 @@ regeoparams={
     "roadlevel": roadlevel,
     "output":"json"
 }
-
+# 从user_key中读取key
 def readkey():
-
+    with open("user_key",encoding="utf-8") as f :
+        key = f.read()
+        print(key)
+    return key
+    
+# 文件读取经纬度
+#暂定从文件读取，也许后面可以直接调用，直接传经纬度就好
 def getorigin(GPS_location):
     location = GPS_location
+    key = readkey()
+
+
